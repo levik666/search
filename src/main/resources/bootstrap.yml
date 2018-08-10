@@ -1,0 +1,20 @@
+server:
+    context-path: /
+    port: ${PORT:5555}
+
+spring:
+    application:
+        name: ${APPLICATION_NAME:search}
+    profiles:
+        active: ${APPLICATION_ACTIVE_PROFILE:prod}
+
+management:
+    context-path: /service
+    health:
+        defaults:
+            enabled: true
+        diskspace:
+            enabled: true
+    info:
+        git:
+            mode: full

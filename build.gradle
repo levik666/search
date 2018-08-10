@@ -44,6 +44,7 @@ dependencyManagement {
 	}
 }
 
+generateGitProperties { onlyIf { !source.isEmpty() } }
 
 dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter')

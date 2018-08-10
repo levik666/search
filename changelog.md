@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-- Add pagination.
+- Add pagination. 
 
 ## [0.0.1]
 Add spring boot 2.0.3.RELEASE.    

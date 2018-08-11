@@ -1,8 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
-- Add pagination. 
+## [Unreleased or Todo]
+- Add pagination to REST API. 
+- Add docker-compose.
+- Add gradle task for docker.
+- Add API documentation via Spring rest-doc.
+- Add Security for upload.
 
 ## [0.0.1]
 Add spring boot 2.0.3.RELEASE.    

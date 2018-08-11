@@ -23,7 +23,7 @@ apply plugin: "com.gorylenko.gradle-git-properties"
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.levik.search'
-version = '${version}'
+version = "${version}"
 description = "Search - Service for analizing data.."
 archivesBaseName = "${name}"
 

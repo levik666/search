@@ -8,7 +8,6 @@ import javax.annotation.PreDestroy;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
 
 import static java.util.Collections.EMPTY_SET;
 

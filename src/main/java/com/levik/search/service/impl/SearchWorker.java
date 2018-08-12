@@ -18,10 +18,10 @@ public class SearchWorker implements Supplier<Optional<String>> {
 
     @Override
     public Optional<String> get() {
-        Optional<String> key = Optional.empty();
+        Optional<String> result = Optional.empty();
         if (values.containsAll(tokens)) {
             return Optional.of(this.key);
         }
-        return key;
+        return result;
     }
 }

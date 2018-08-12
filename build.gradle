@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '2.0.3.RELEASE'
 		gitPropertiesVesrion = '1.5.1'
 		springCloudVersion = 'Finchley.SR1'
+		sonarQubePluginVersion = '2.6.1'
 	}
 	repositories {
 		mavenCentral()
@@ -13,6 +14,7 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath ("gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:${gitPropertiesVesrion}")
+		classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:${sonarQubePluginVersion}"
 	}
 }
 
@@ -21,6 +23,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: "com.gorylenko.gradle-git-properties"
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.sonarqube'
 
 group = 'com.levik.search'
 version = "${version}"

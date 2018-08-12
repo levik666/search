@@ -2,7 +2,7 @@ package com.levik.search;
 
 import com.levik.search.dto.DocumentRequest;
 
-public class AbstractUrlTest {
+public abstract class AbstractUrlTest {
 
     protected static final String SCHEMA = "http";
     protected static final String HOST = "localhost";

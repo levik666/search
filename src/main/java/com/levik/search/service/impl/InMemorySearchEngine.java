@@ -19,7 +19,7 @@ public class InMemorySearchEngine implements SearchService {
 
     private final StorageService<String, String> storage;
 
-    private final String SPACE = " ";
+    private static final String SPACE_PREFIX = " ";
 
     public InMemorySearchEngine(StorageService<String, String> storage) {
         this.storage = storage;
@@ -48,6 +48,6 @@ public class InMemorySearchEngine implements SearchService {
     }
 
     private Set<String> collect(String q) {
-        return Stream.of(q.split(SPACE)).collect(Collectors.toSet());
+        return Stream.of(q.split(SPACE_PREFIX)).collect(Collectors.toSet());
     }
 }
